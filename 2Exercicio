@@ -1,0 +1,9 @@
+def verificar_reflexividade(relacao, conjunto):
+    for elemento in conjunto:
+        if (elemento, elemento) not in relacao:
+            return "A relação não é reflexiva."
+    return "A relação é reflexiva."
+
+conjunto = {1, 2, 3}
+relacao = {(1, 1), (2, 2), (3, 3), (1, 2)}
+print(verificar_reflexividade(relacao, conjunto))
