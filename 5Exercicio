@@ -1,0 +1,8 @@
+def verificar_simetria(relacao):
+    for a, b in relacao:
+        if (b, a) not in relacao:
+            return "A relação não é simétrica."
+    return "A relação é simétrica."
+
+relacao_simetrica = {(1, 2), (2, 1), (3, 3)}
+print(verificar_simetria(relacao_simetrica))
